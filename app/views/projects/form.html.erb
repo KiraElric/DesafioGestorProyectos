@@ -1,6 +1,6 @@
 <h1 class="text-center display-3 font-weight-bold pt-3">Formulario de Proyectos</h1>
 <div class="container py-5">
-  <form action="#" method="get">
+  <form action="/projects/create" method="get">
     <div class="form-group">
       <label for="name" class="display-6 font-weight-bold">Nombre proyecto</label>
       <input type="text" class="form-control" name="name_project" id="name_project" placeholder="Ingrese el nombre del proyecto">
@@ -25,7 +25,7 @@
       <label for="state" class="display-6 font-weight-bold">Estado</label>
       <select class="form-control" id="state" name="state">
         <option value="propuesta">Propuesta</option>
-        <option value="en-progreso">En progreso</option>
+        <option value="en_progreso">En progreso</option>
         <option value="terminado">Terminado</option>
       </select>
     </div>
