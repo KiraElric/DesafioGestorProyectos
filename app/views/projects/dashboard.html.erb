@@ -1,0 +1,30 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand">Proyectos</a>
+  <form class="form-inline">
+    <input class="form-control mr-sm-3" type="search" name="state" placeholder="Ingrese el estado del proyecto" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+  </form>
+</nav>
+
+<div class="container">
+  <h2 class="display-3 text-center font-weight-bold">Listado de proyectos</h2>
+  <table class="table">
+    <tr>
+      <th>Nombre proyecto</th>
+      <th>Descripción</th>
+      <th>Fecha de inicio</th>
+      <th>Fecha de término</th>
+      <th>Estado</th>
+    </tr>
+    <% @projects.each do |project|%>
+      <tr>
+        <td><%= projec.name_project %></td>
+        <td><%= projec.description %></td>
+        <td><%= projec.date_start %></td>
+        <td><%= projec.date_finish %></td>
+        <td><%= projec.state %></td>
+      </tr>
+    <% end%>
+  </table>
+</div>
+

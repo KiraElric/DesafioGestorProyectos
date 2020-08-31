@@ -1,0 +1,37 @@
+<h1 class="text-center display-3 font-weight-bold pt-3">Formulario de Proyectos</h1>
+<div class="container py-5">
+  <form action="#" method="get">
+    <div class="form-group">
+      <label for="name" class="display-6 font-weight-bold">Nombre proyecto</label>
+      <input type="text" class="form-control" name="name_project" id="name_project" placeholder="Ingrese el nombre del proyecto">
+    </div>
+
+    <div class="form-group">
+      <label for="description" class="display-6 font-weight-bold">Descripción</label>
+      <textarea class="form-control" name="description" id="description" placeholder="Descripción del proyecto"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="date_start" class="display-6 font-weight-bold">Fecha de inicio</label>
+      <input type="date" class="form-control" name="date_start" id="date_start">
+    </div>
+
+    <div class="form-group">
+      <label for="date_finish" class="display-6 font-weight-bold">Fecha de término</label>
+      <input type="date" class="form-control" name="date_finish" id="date_finish">
+    </div>
+
+    <div class="form-group">
+      <label for="state" class="display-6 font-weight-bold">Estado</label>
+      <select class="form-control" id="state" name="state">
+        <option value="propuesta">Propuesta</option>
+        <option value="en-progreso">En progreso</option>
+        <option value="terminado">Terminado</option>
+      </select>
+    </div>
+
+    <div class="text-right ">
+      <button type="submit" class="btn btn-success btn-lg">Guardar</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,14 @@
+<% if @project.errors.any?%>
+  <div id="error_explanation">
+    <h2><%= pluralize.(@project.errors.count, "error") %> prohibited this project from being saved </h2>
+    <ul>
+      <% project.errors.full_message.each do |message|%>
+        <li><%= message%></li>
+      <%end%>
+    </ul>
+  </div>
+
+<% else%>
+  <h1 class="display-3 text-center font-weight-bold">El registro se guardo correctamente</h1>
+  
+<% end%>
